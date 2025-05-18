@@ -22,8 +22,8 @@ const projects = [
       "Mysql",
       "Redis",
     ],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://olmat-client.vercel.app/",
+    githubUrl: "https://github.com/mcramaaa/olmat-client",
   },
   {
     title: "Backoffice Mathematics Olympiad (Olmat) UINSA",
@@ -39,8 +39,8 @@ const projects = [
       "Mysql",
       "Redis",
     ],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://olmat-backoffice.vercel.app/",
+    githubUrl: "https://github.com/mcramaaa/olmat-backoffice",
   },
   {
     title: "WhatsApp Bot API",
