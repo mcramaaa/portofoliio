@@ -9,29 +9,36 @@ import { Badge } from "./ui/badge";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description:
-      "A full-featured online store with product listings, cart functionality, and secure checkout process.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "https://github.com/mcramaaa/exam-backoffice",
-  },
-  {
-    title: "Multi-Institution Online Exam System",
-    description:
-      "An online exam platform used by multiple institutions including the UINSA Mathematics Olympiad and other school exams, featuring dashboards for superadmins and institution admins.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["Next.js", "React", "Tailwind CSS", "Dashboard"],
-    demoUrl: "#",
-    githubUrl: "https://github.com/mcramaaa/exam-backoffice",
-  },
-  {
     title: "Mathematics Olympiad (Olmat) UINSA",
     description:
-      "Registration and management system for the Mathematics Olympiad at UIN Sunan Ampel, including participant registration, school data management, and validation.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["Next.js", "React", "Tailwind CSS", "Form Validation"],
+      "OLMAT Client is a participant-facing registration system for the OLMAT (Olimpiade Matematika). This web application enables users (students/schools) to register for the event, manage their profiles, view announcements, and track the status of their registrations.",
+    image: "/project/olmat-client.webp",
+    tags: [
+      "Typescript",
+      "Next.js",
+      "React",
+      "Nest.js",
+      "Express.js",
+      "Mysql",
+      "Redis",
+    ],
+    demoUrl: "#",
+    githubUrl: "#",
+  },
+  {
+    title: "Backoffice Mathematics Olympiad (Olmat) UINSA",
+    description:
+      "OLMAT Backoffice is an admin dashboard application for managing the registration system of the Mathematics Olympiad. This platform is designed for committee use to handle data for participants, schools, regions, and event management.",
+    image: "/project/olmat-backoffice.webp",
+    tags: [
+      "Typescript",
+      "Next.js",
+      "React",
+      "Nest.js",
+      "Express.js",
+      "Mysql",
+      "Redis",
+    ],
     demoUrl: "#",
     githubUrl: "#",
   },
@@ -42,32 +49,60 @@ const projects = [
     image: "/placeholder.svg?height=400&width=600",
     tags: ["Node.js", "Express", "whatsapp-web.js", "API"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/mcramaaa/wa-bot-client",
   },
   {
     title: "Blood Sugar Level Reminder App",
     description:
-      "An app that reminds users to regularly monitor their blood sugar levels to help maintain their health.",
+      "A collaborative app developed together with dental medicine students from Universitas Airlangga, the Surabaya City Health Office, and local health centers (Puskesmas) in Surabaya. This app helps users regularly monitor their blood sugar levels to support better health management",
     image: "/placeholder.svg?height=400&width=600",
     tags: ["React Native", "TypeScript"],
-    demoUrl: "#",
+    demoUrl: "",
     githubUrl: "https://github.com/mcramaaa/sugar-assist-app",
+  },
+  {
+    title: "GIMUL Teeth Persistence App",
+    description:
+      "A collaborative app developed together with dental medicine students from Universitas Airlangga, the Surabaya City Health Office, and local health centers (Puskesmas) in Surabaya. This app is designed to monitor the persistence and growth of children's teeth to support early dental health management.",
+    image: "/placeholder.svg?height=400&width=600",
+    tags: ["React Native", "TypeScript"],
+    demoUrl: "",
+    githubUrl: "https://github.com/mcramaaa/gimul-app",
   },
   {
     title: "Game-Based Learning Media",
     description:
       "Android-based game learning media registered with copyright, designed for interactive education.",
     image: "/placeholder.svg?height=400&width=600",
-    tags: ["Android", "Java", "Kotlin", "Game Development"],
-    demoUrl: "#",
+    tags: ["Android", "Unity", "C#", "Game Development"],
+    demoUrl:
+      "https://drive.google.com/drive/folders/1FJTBMY4vL8YJhRFNr6WueDeIVAMpKPfP?usp=sharing",
     githubUrl: "#",
   },
+  // {
+  //   title: "E-Commerce Backoffice Dashboard",
+  //   description:
+  //     "A backoffice dashboard for managing products, customers, and roles, integrated with APIs using Next.js and MySQL.",
+  //   image: "/placeholder.svg?height=400&width=600",
+  //   tags: ["Next.js", "React", "MySQL", "API"],
+  //   demoUrl: "#",
+  //   githubUrl: "https://github.com/mcramaaa/exam-backoffice",
+  // },
+  // {
+  //   title: "E-Commerce Platform",
+  //   description:
+  //     "A full-featured online store with product listings, cart functionality, and secure checkout process.",
+  //   image: "/placeholder.svg?height=400&width=600",
+  //   tags: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
+  //   demoUrl: "#",
+  //   githubUrl: "https://github.com/mcramaaa/exam-backoffice",
+  // },
   {
-    title: "E-Commerce Backoffice Dashboard",
+    title: "Multi-Institution Online Exam System",
     description:
-      "A backoffice dashboard for managing products, customers, and roles, integrated with APIs using Next.js and MySQL.",
+      "An online exam platform used by multiple institutions including the UINSA Mathematics Olympiad and other school exams, featuring dashboards for superadmins and institution admins.",
     image: "/placeholder.svg?height=400&width=600",
-    tags: ["Next.js", "React", "MySQL", "API"],
+    tags: ["Next.js", "React", "Tailwind CSS", "Dashboard"],
     demoUrl: "#",
     githubUrl: "https://github.com/mcramaaa/exam-backoffice",
   },

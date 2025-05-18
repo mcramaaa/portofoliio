@@ -19,7 +19,7 @@ export default function Hero() {
         loop
         // playsInline
         muted
-        className="object-cover w-full h-full absolute pointer-events-none "
+        className="object-cover w-full h-full absolute pointer-events-none"
         src={`https://videos.pexels.com/video-files/29607597/12742138_1920_1080_30fps.mp4`}
       ></video>
       <div className="absolute inset-0 bg-grid-small-white/[0.2] dark:bg-grid-small-white/[0.05] bg-[length:30px_30px]" />
