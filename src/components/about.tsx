@@ -6,8 +6,27 @@ import { Download } from "lucide-react";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "./ui/dropdown-menu";
 
 export default function About() {
+  // Function to handle CV download
+  const handleDownload = (language: "id" | "eng") => {
+    const fileUrl = language === "id" ? "/assets/id.pdf" : "/assets/eng.pdf";
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = `CV_${
+      language === "id" ? "Indonesian" : "English"
+    } M Ramadhani.pdf`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="about" className="py-20">
       <div className="container px-4 md:px-6">
@@ -67,10 +86,23 @@ export default function About() {
             </p>
 
             <div className="pt-4 flex items-center gap-4">
-              <Button className="gap-2">
-                <Download className="h-4 w-4" />
-                Download Resume
-              </Button>
+              {/* Dropdown Menu for CV Download */}
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button className="gap-2">
+                    <Download className="h-4 w-4" />
+                    Download CV
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent>
+                  <DropdownMenuItem onClick={() => handleDownload("eng")}>
+                    English
+                  </DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => handleDownload("id")}>
+                    Indonesian
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
               <Link
                 href="https://github.com/mcramaaa"
                 target="_blank"
